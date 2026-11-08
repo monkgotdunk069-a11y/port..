@@ -1,0 +1,1540 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nishant Rawat | AI & Data Science Engineer • 1 CHD AIR SQN NCC</title>
+    <meta name="description" content="Portfolio of Nishant Rawat — MCA Candidate in AI & Data Science at Graphic Era Deemed to be University, BCA (72%) from DAV College Sector 10 Chandigarh, and 'A' Grade in NCC 'C' Certificate under 1 CHD AIR SQN NCC." />
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              iaf: {
+                sky: '#0284c7',       // Sky Blue 600
+                skylight: '#e0f2fe',  // Sky Blue 100
+                skybg: '#f0f7ff',     // Light Sky
+                navy: '#0f172a',      // Dark Navy
+                navylight: '#1e293b',
+                border: '#bae6fd',
+              }
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- IAF Sky Blue & White Theme Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Three.js & Loaders -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="./js/MTLLoader.js"></script>
+    <script src="./js/OBJLoader.js"></script>
+    <script src="./js/OrbitControls.js"></script>
+
+    <!-- Canvas Confetti CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  </head>
+
+  <body class="bg-[#f8fafc] text-slate-900 antialiased selection:bg-sky-200 selection:text-sky-900 sky-grid">
+    
+    <!-- WRAPPER -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+
+      <!-- ========================================== -->
+      <!-- CLEAN IAF SKY BLUE & WHITE NAVBAR          -->
+      <!-- ========================================== -->
+      <header class="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-sky-100 py-3 shadow-xs transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+          
+          <!-- Logo & Callsign (Non-Shrinking & Strictly Single-Line) -->
+          <a href="#" class="flex items-center gap-3 group shrink-0">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-500 to-sky-600 flex items-center justify-center text-white text-lg shadow-sm shadow-sky-500/20 group-hover:scale-105 transition-transform shrink-0">
+              ✈️
+            </div>
+            <div class="flex flex-col justify-center min-w-0">
+              <div class="flex items-center gap-2 whitespace-nowrap">
+                <span class="font-extrabold text-base tracking-tight text-slate-900 group-hover:text-sky-700 transition-colors whitespace-nowrap">
+                  Nishant Rawat
+                </span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wide uppercase bg-sky-100 text-sky-800 border border-sky-200 whitespace-nowrap shrink-0">
+                  MCA AI/DS
+                </span>
+              </div>
+              <span class="text-xs text-slate-500 font-medium whitespace-nowrap">
+                Graphic Era Deemed to be University
+              </span>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden xl:flex items-center space-x-1 bg-slate-50 border border-slate-200 px-3 py-1 rounded-full shadow-xs">
+            <a href="#about" class="whitespace-nowrap text-xs font-semibold text-slate-700 hover:text-sky-700 px-2.5 py-1 rounded-md hover:bg-white transition-colors">Summary</a>
+            <a href="#projects" class="whitespace-nowrap text-xs font-semibold text-slate-700 hover:text-sky-700 px-2.5 py-1 rounded-md hover:bg-white transition-colors">Projects</a>
+            <a href="#education" class="whitespace-nowrap text-xs font-semibold text-slate-700 hover:text-sky-700 px-2.5 py-1 rounded-md hover:bg-white transition-colors">Education</a>
+            <a href="#ncc" class="whitespace-nowrap text-xs font-semibold text-slate-700 hover:text-sky-700 px-2.5 py-1 rounded-md hover:bg-white transition-colors">1 CHD Air Sqn</a>
+            <a href="#hobbies" class="whitespace-nowrap text-xs font-semibold text-slate-700 hover:text-sky-700 px-2.5 py-1 rounded-md hover:bg-white transition-colors">Hobbies</a>
+            <a href="#skills" class="whitespace-nowrap text-xs font-semibold text-slate-700 hover:text-sky-700 px-2.5 py-1 rounded-md hover:bg-white transition-colors">Skills</a>
+            <a href="#terminal" class="whitespace-nowrap text-xs font-semibold text-slate-700 hover:text-sky-700 px-2.5 py-1 rounded-md hover:bg-white transition-colors">CLI</a>
+            <a href="#contact" class="whitespace-nowrap text-xs font-semibold text-slate-700 hover:text-sky-700 px-2.5 py-1 rounded-md hover:bg-white transition-colors">Contact</a>
+          </nav>
+
+          <!-- Contact CTAs -->
+          <div class="flex items-center space-x-3 shrink-0">
+            <a
+              href="mailto:monkgotdunk069@gmail.com"
+              class="hidden 2xl:inline-flex items-center gap-1.5 text-xs font-mono font-medium text-slate-600 hover:text-sky-700 transition-colors whitespace-nowrap"
+            >
+              <span>✉️</span>
+              <span>monkgotdunk069@gmail.com</span>
+            </a>
+
+            <a
+              href="#contact"
+              class="btn-iaf-primary whitespace-nowrap text-xs sm:text-sm py-2 px-3.5 sm:px-4"
+            >
+              <span>Get in Touch</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </header>
+
+      <!-- ========================================== -->
+      <!-- HERO: CLEAN AIR FORCE SKY BLUE & WHITE     -->
+      <!-- ========================================== -->
+      <section class="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Left: Professional Profile & Bio -->
+          <div class="lg:col-span-7 space-y-4">
+            
+            <!-- Air Force Tag -->
+            <div class="section-tag">
+              <span>✈️</span>
+              <span>INDIAN AIR FORCE AIR WING CADET • 1 CHD AIR SQN NCC</span>
+            </div>
+
+            <!-- Title & Introduction -->
+            <div>
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                Nishant Rawat
+              </h1>
+              <p class="mt-1 text-xl font-bold text-sky-700">
+                AI & Data Science Specialist • 1 CHD AIR SQN NCC Cadet
+              </p>
+            </div>
+
+            <!-- 1. DEDICATED OFFICIAL PROFESSIONAL SUMMARY CARD -->
+            <div class="iaf-card p-5 sm:p-6 border-l-4 border-l-sky-600 bg-white shadow-sm space-y-3.5">
+              <div class="flex flex-wrap items-center justify-between gap-2 border-b border-sky-100 pb-2.5">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-mono font-bold bg-sky-100 text-sky-900 border border-sky-200">
+                  <span>📋</span> PROFESSIONAL SUMMARY
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-[11px] font-bold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+                  OPEN FOR SDE & AI/ML ROLES
+                </span>
+              </div>
+
+              <!-- Seeking Role Badges -->
+              <div class="flex flex-wrap items-center gap-1.5 pt-0.5">
+                <span class="text-[11px] font-mono font-bold text-slate-500 uppercase mr-1">Seeking:</span>
+                <span class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-sky-50 text-sky-800 border border-sky-200">
+                  💻 Software Development Engineer (SDE)
+                </span>
+                <span class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-sky-50 text-sky-800 border border-sky-200">
+                  🧠 Machine Learning Engineer
+                </span>
+                <span class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-sky-50 text-sky-800 border border-sky-200">
+                  📊 Data Scientist
+                </span>
+              </div>
+
+              <p class="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
+                Aspiring <strong class="text-slate-900 font-bold">Software Development Engineer (SDE)</strong>, <strong class="text-sky-700 font-bold">Machine Learning Engineer</strong>, and <strong class="text-sky-700 font-bold">Data Scientist</strong> with proven hands-on experience designing and deploying scalable software architectures, deep neural network frameworks, and predictive intelligence pipelines. Currently pursuing an MCA in AI & Data Science at Graphic Era Deemed to be University, backed by an unshakeable computer science foundation (BCA from DAV College Sector 10 Chandigarh) and the operational precision, composure, and work ethic instilled as an 'A' Grade NCC Air Wing Cadet (1 CHD AIR SQN NCC).
+              </p>
+
+              <!-- Clean Technical Arsenal & Specialization -->
+              <div class="pt-3 border-t border-slate-100 space-y-2.5">
+                
+                <!-- Row 1: Core Stack -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                  <div class="flex items-center gap-1.5 shrink-0 sm:w-28">
+                    <div class="w-5 h-5 rounded-md bg-sky-100 flex items-center justify-center text-sky-700 shrink-0">
+                      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                      </svg>
+                    </div>
+                    <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 whitespace-nowrap">Core Stack</span>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-1.5">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-800 border border-slate-200 hover:border-sky-300 transition-colors">Python</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-800 border border-slate-200 hover:border-sky-300 transition-colors">C++</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-sky-50 text-sky-800 border border-sky-200 hover:border-sky-400 transition-colors">PyTorch</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-sky-50 text-sky-800 border border-sky-200 hover:border-sky-400 transition-colors">Scikit-Learn</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-800 border border-slate-200 hover:border-sky-300 transition-colors">SQL</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-800 border border-slate-200 hover:border-sky-300 transition-colors">Flask / FastAPI</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-semibold bg-slate-100 text-slate-800 border border-slate-200 hover:border-sky-300 transition-colors">Git</span>
+                  </div>
+                </div>
+
+                <!-- Row 2: Specialization -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-2">
+                  <div class="flex items-center gap-1.5 shrink-0 sm:w-28">
+                    <div class="w-5 h-5 rounded-md bg-sky-100 flex items-center justify-center text-sky-700 shrink-0">
+                      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                      </svg>
+                    </div>
+                    <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-700 whitespace-nowrap">Specialization</span>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-1.5">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-sky-100 text-sky-900 border border-sky-200">Full-Stack SDE</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-sky-100 text-sky-900 border border-sky-200">Deepfake Forensics</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-sky-100 text-sky-900 border border-sky-200">Computer Vision</span>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-sky-100 text-sky-900 border border-sky-200">Predictive ML</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 2. THE QUOTE RIGHT HERE IN THE HERO -->
+            <div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-sky-50 via-white to-sky-50/50 border-2 border-sky-300 shadow-sm flex items-center gap-4">
+              <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden border-2 border-sky-300 flex-shrink-0 shadow-xs">
+                <img src="./images/nimsdai-quote.jpg" alt="Nimsdai Purja - 14 Peaks" class="w-full h-full object-cover object-center" />
+              </div>
+              <div class="space-y-1">
+                <span class="text-[10px] font-mono font-bold text-sky-700 tracking-wider uppercase block">
+                  MOUNTAINEERING ETHOS • 14 PEAKS
+                </span>
+                <blockquote class="text-base sm:text-lg font-black text-slate-900 leading-snug">
+                  “Giving up is not in the blood, sir. It's not in the blood.”
+                </blockquote>
+                <div class="text-xs font-semibold text-slate-600">
+                  — <span class="font-bold text-sky-800">Nimsdai Purja, MBE</span> (14 Peaks: Nothing Is Impossible)
+                </div>
+              </div>
+            </div>
+
+            <!-- Verified Milestone Badges (Clean Sky Blue & White) -->
+            <div class="flex flex-wrap items-center gap-2 pt-1">
+              <span class="badge-sky">
+                <span>🎓</span> MCA AI & DS — Graphic Era University
+              </span>
+              <span class="badge-sky">
+                <span>🏛️</span> BCA: 72% — DAV-10 (Panjab Univ)
+              </span>
+              <span class="badge-navy">
+                <span>🏫</span> KV OCF Sec-29B: 74% (12th) | 79% (10th)
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
+                <span>🎖️</span> NCC 'C' Cert: 'A' Grade (Air Wing)
+              </span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a href="#projects" class="btn-iaf-primary">
+                <span>View Major Projects</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+              </a>
+
+              <a
+                href="https://github.com/monkgotdunk069-a11y"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-iaf-secondary"
+              >
+                <svg class="w-4 h-4 text-sky-700" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span>GitHub Repositories</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/nishant-rawat-412796348"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-iaf-secondary"
+              >
+                <span>LinkedIn</span>
+                <span class="text-sky-600">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive 3D Sukhoi Su-30MKI Fighter Canvas -->
+          <div class="lg:col-span-5 relative flex items-center justify-center">
+            <div class="relative w-full h-[500px] sm:h-[560px] rounded-2xl overflow-hidden bg-gradient-to-b from-[#93c5fd] via-[#bae6fd] to-[#e0f2fe] border-2 border-sky-300 shadow-lg">
+              
+              <!-- Camera Preset Quick Controls -->
+              <div class="absolute top-3 left-3 right-3 z-20 flex items-center justify-between pointer-events-none">
+                <span class="pointer-events-auto px-2.5 py-1 rounded-md bg-white/90 backdrop-blur-md text-[10px] font-mono font-bold text-sky-800 border border-sky-200 shadow-xs">
+                  ✈️ 3D SU-30MKI BRAHMOS
+                </span>
+                <div class="pointer-events-auto flex items-center gap-1 bg-white/90 backdrop-blur-md p-1 rounded-lg border border-sky-200 shadow-xs text-[10px] font-mono">
+                  <button id="cam-btn-34" class="px-2 py-0.5 rounded bg-sky-600 text-white font-semibold hover:bg-sky-700 transition-colors">3/4</button>
+                  <button id="cam-btn-weapons" class="px-2 py-0.5 rounded hover:bg-sky-100 text-slate-700 transition-colors" title="BrahMos Missile View">BrahMos</button>
+                  <button id="cam-btn-cockpit" class="px-2 py-0.5 rounded hover:bg-sky-100 text-slate-700 transition-colors" title="Cockpit Close-up">Cockpit</button>
+                  <button id="cam-btn-top" class="px-2 py-0.5 rounded hover:bg-sky-100 text-slate-700 transition-colors" title="Top Wingspan">Top</button>
+                  <button id="cam-btn-auto" class="px-2 py-0.5 rounded hover:bg-sky-100 text-sky-700 font-bold transition-colors" title="Toggle Auto Rotate">⟳</button>
+                </div>
+              </div>
+
+              <!-- Canvas Container -->
+              <div id="hero-canvas-container" class="w-full h-full cursor-grab active:cursor-grabbing"></div>
+              
+              <!-- Loading Indicator -->
+              <div id="su30-loading-overlay" class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-white/80 backdrop-blur-xs transition-opacity duration-500 pointer-events-none">
+                <div class="w-8 h-8 rounded-full border-2 border-sky-600 border-t-transparent animate-spin mb-2"></div>
+                <span class="text-xs font-mono font-semibold text-sky-800">Loading Su-30MKI BrahMos 3D Model...</span>
+              </div>
+
+              <!-- Clean Su-30 Aircraft Telemetry Plaque -->
+              <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-md p-3.5 rounded-xl border border-sky-200 shadow-sm flex items-center justify-between text-xs">
+                <div>
+                  <span class="text-[10px] font-mono text-sky-700 font-bold tracking-wider block">INDIAN AIR FORCE • BRAHMOS LOADOUT #1</span>
+                  <span class="text-slate-900 font-extrabold text-sm">Sukhoi Su-30MKI (Flanker-H)</span>
+                  <span class="text-[11px] text-slate-600 block">3D CAD / Print Model • BrahMos & Rudram-1 Hardpoints • 360° Drag & Zoom</span>
+                </div>
+                <div class="text-right">
+                  <span class="badge-sky text-[10px]">1 CHD AIR SQN</span>
+                  <span class="text-[10px] text-slate-400 block mt-0.5">Orbit / Wheel Zoom</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION: VERIFIED ACADEMIC SCORECARD       -->
+      <!-- ========================================== -->
+      <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          
+          <div class="iaf-card p-5 border-l-4 border-l-sky-600">
+            <span class="text-[10px] font-mono font-bold text-sky-700 uppercase tracking-wider block">POSTGRADUATE</span>
+            <div class="text-lg font-extrabold text-slate-900 mt-1">MCA (AI & DS)</div>
+            <div class="text-xs text-slate-600 mt-1 font-medium">Graphic Era University, Dehradun</div>
+            <div class="text-[11px] text-slate-400 mt-1">2024 – Present (Ongoing)</div>
+          </div>
+
+          <div class="iaf-card p-5 border-l-4 border-l-sky-500 bg-sky-50/30">
+            <span class="text-[10px] font-mono font-bold text-sky-700 uppercase tracking-wider block">GRADUATION (PU)</span>
+            <div class="text-lg font-extrabold text-sky-800 mt-1">72% Aggregate</div>
+            <div class="text-xs text-slate-700 mt-1 font-medium">BCA • DAV College Sector 10</div>
+            <div class="text-[11px] text-slate-500 mt-1">Panjab University, Chandigarh</div>
+          </div>
+
+          <div class="iaf-card p-5 border-l-4 border-l-emerald-600 bg-emerald-50/20">
+            <span class="text-[10px] font-mono font-bold text-emerald-800 uppercase tracking-wider block">SCHOOLING (CBSE)</span>
+            <div class="text-lg font-extrabold text-emerald-900 mt-1">74% (12th) | 79% (10th)</div>
+            <a href="https://chandigarhocf.kvs.ac.in/en/" target="_blank" rel="noopener noreferrer" class="text-xs text-sky-700 hover:underline mt-1 font-medium block">
+              KV OCF Sector 29-B, CHD ↗
+            </a>
+            <div class="text-[11px] text-slate-500 mt-1">Science Stream (CBSE)</div>
+          </div>
+
+          <div class="iaf-card p-5 border-l-4 border-l-amber-500 bg-amber-50/30">
+            <span class="text-[10px] font-mono font-bold text-amber-800 uppercase tracking-wider block">NCC AIR WING</span>
+            <div class="text-lg font-extrabold text-amber-900 mt-1">'A' Grade in 'C' Cert</div>
+            <div class="text-xs text-slate-700 mt-1 font-medium">1 CHD AIR SQN NCC</div>
+            <div class="text-[11px] text-slate-500 mt-1">Highest Air Wing Distinction</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION: ABOUT & PHOTOGRAPHY               -->
+      <!-- ========================================== -->
+      <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Photo Showcase -->
+          <div class="lg:col-span-5 flex flex-col items-center">
+            <div class="iaf-card p-3 w-full max-w-sm">
+              <div class="relative h-[420px] rounded-xl overflow-hidden bg-slate-100 border border-slate-200">
+                <img
+                  id="profile-main-img"
+                  src="./images/nishant-ncc.jpg"
+                  alt="Nishant Rawat in NCC Air Wing uniform beside Capt Vikram Batra PVC"
+                  class="w-full h-full object-cover object-top transition-opacity duration-300"
+                />
+                
+                <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-md p-3 rounded-lg border border-slate-200 shadow-sm">
+                  <h3 id="photo-card-title" class="text-sm font-bold text-slate-900">
+                    1 CHD Air Sqn NCC Cadet
+                  </h3>
+                  <p id="photo-card-subtitle" class="text-xs text-slate-600 truncate">
+                    Air Wing Cadet • DAV & Capt. Vikram Batra PVC Legacy
+                  </p>
+                </div>
+              </div>
+
+              <!-- Thumbnails -->
+              <div class="grid grid-cols-6 gap-1.5 mt-3">
+                <button data-photo="ncc" class="photo-thumb-btn rounded-lg overflow-hidden border-2 border-sky-600 ring-2 ring-sky-200 p-0.5 transition-all" title="1 CHD Air Sqn NCC Cadet">
+                  <img src="./images/nishant-ncc.jpg" alt="NCC" class="w-full h-11 object-cover rounded" />
+                </button>
+                <button data-photo="photography" class="photo-thumb-btn rounded-lg overflow-hidden border border-slate-200 opacity-70 hover:opacity-100 p-0.5 transition-all" title="Dawn Lake Photography">
+                  <img src="./images/nishant-photography.jpg" alt="Dawn Lake Photography" class="w-full h-11 object-cover rounded" />
+                </button>
+                <button data-photo="rock" class="photo-thumb-btn rounded-lg overflow-hidden border border-slate-200 opacity-70 hover:opacity-100 p-0.5 transition-all" title="Himalayan Ridge Ascent">
+                  <img src="./images/nishant-rock.jpg" alt="Rock" class="w-full h-11 object-cover rounded" />
+                </button>
+                <button data-photo="mountain" class="photo-thumb-btn rounded-lg overflow-hidden border border-slate-200 opacity-70 hover:opacity-100 p-0.5 transition-all" title="Dhauladhar Trekking">
+                  <img src="./images/nishant-mountain.jpg" alt="Mountain" class="w-full h-11 object-cover rounded" />
+                </button>
+                <button data-photo="summit" class="photo-thumb-btn rounded-lg overflow-hidden border border-slate-200 opacity-70 hover:opacity-100 p-0.5 transition-all" title="Himalayan Summit Outpost">
+                  <img src="./images/nishant-summit.jpg" alt="Summit" class="w-full h-11 object-cover rounded" />
+                </button>
+                <button data-photo="quote" class="photo-thumb-btn rounded-lg overflow-hidden border border-slate-200 opacity-70 hover:opacity-100 p-0.5 transition-all" title="Nimsdai Purja Quote">
+                  <img src="./images/nimsdai-quote.jpg" alt="Quote" class="w-full h-11 object-cover rounded" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Narrative & Official Summary -->
+          <div class="lg:col-span-7 space-y-5">
+            <div class="section-tag">
+              <span>📋</span>
+              <span>EXECUTIVE PROFESSIONAL SUMMARY</span>
+            </div>
+
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+              Discipline in Flight. Precision in Code.
+            </h2>
+
+            <!-- Highlighted Official Summary Card -->
+            <div class="iaf-card p-6 border-l-4 border-l-sky-600 bg-sky-50/40 space-y-3.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-mono font-bold text-sky-800 uppercase tracking-wider">
+                  OFFICIAL PROFESSIONAL DOSSIER
+                </span>
+                <span class="badge-sky text-[10px]">VERIFIED CREDENTIALS</span>
+              </div>
+              <p class="text-slate-900 font-medium text-sm sm:text-base leading-relaxed">
+                Aspiring <strong class="text-sky-700 font-bold">Software Development Engineer (SDE)</strong>, <strong class="text-sky-700 font-bold">Machine Learning Engineer</strong>, and <strong class="text-sky-700 font-bold">Data Scientist</strong> with strong full-stack software development skills, deep neural network expertise (PyTorch, InsightFace SCRFD), and predictive ensemble modeling (XGBoost, Scikit-Learn).
+              </p>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Combining a rigorous computer science background from DAV College Sector 10 Chandigarh and postgraduate specialization in Artificial Intelligence & Data Science at Graphic Era University with the unwavering discipline, attention to detail, and calm composure under pressure forged as an 'A' Grade NCC Air Wing Cadet (1 CHD AIR SQN NCC).
+              </p>
+            </div>
+
+            <!-- Core Pillar Highlights -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-sky-600 text-sm font-bold">🧠</span>
+                  <span class="text-xs font-bold text-slate-900">AI & Deep Learning</span>
+                </div>
+                <p class="text-[11px] text-slate-600 leading-normal">
+                  End-to-end multi-domain deepfake detection, biomedical ECG neural networks, and live deployed machine learning systems.
+                </p>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
+                <div class="flex items-center gap-2">
+                  <span class="text-sky-600 text-sm font-bold">✈️</span>
+                  <span class="text-xs font-bold text-slate-900">Military Rigor & Air Wing</span>
+                </div>
+                <p class="text-[11px] text-slate-600 leading-normal">
+                  1 CHD AIR SQN NCC 'A' Grade distinction, walking the grounds of DAV-10 alongside the legacy of Capt. Vikram Batra, PVC.
+                </p>
+              </div>
+            </div>
+
+            <!-- Direct Contact Links -->
+            <div class="flex flex-wrap items-center gap-2.5 pt-2">
+              <a
+                href="mailto:monkgotdunk069@gmail.com"
+                class="badge-sky text-xs py-2 px-3.5 hover:bg-sky-100 transition-colors"
+              >
+                <span>✉️</span>
+                <span>monkgotdunk069@gmail.com</span>
+              </a>
+              <a
+                href="https://github.com/monkgotdunk069-a11y"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="badge-navy text-xs py-2 px-3.5 hover:bg-slate-200 transition-colors"
+              >
+                <span>💻</span>
+                <span>GitHub: monkgotdunk069-a11y</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nishant-rawat-412796348"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="badge-sky text-xs py-2 px-3.5 hover:bg-sky-100 transition-colors"
+              >
+                <span>🔗</span>
+                <span>LinkedIn</span>
+              </a>
+              <a
+                href="https://www.instagram.com/nishant_singh_rawat04/?__d=11"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="badge-navy text-xs py-2 px-3.5 hover:bg-slate-200 transition-colors"
+              >
+                <span>📸</span>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION: MAJOR GITHUB PROJECTS             -->
+      <!-- ========================================== -->
+      <section id="projects" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-white rounded-3xl border border-sky-100 shadow-sm my-6">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+          <div class="section-tag mx-auto">
+            <span>💻</span>
+            <span>GITHUB REPOSITORIES</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+            Major Featured Projects
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Verified production systems and research repositories from my GitHub profile (<a href="https://github.com/monkgotdunk069-a11y" target="_blank" class="text-sky-700 font-semibold hover:underline">monkgotdunk069-a11y</a>).
+          </p>
+        </div>
+
+        <!-- Filter Chips -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+          <button data-filter="all" class="project-filter-btn px-4 py-2 rounded-lg text-xs font-semibold transition-all border bg-sky-600 text-white shadow-sm">
+            All Projects (7)
+          </button>
+          <button data-filter="ai" class="project-filter-btn px-4 py-2 rounded-lg text-xs font-semibold transition-all border border-slate-200 bg-white text-slate-700 hover:border-sky-300">
+            Deep Learning & Vision
+          </button>
+          <button data-filter="ml" class="project-filter-btn px-4 py-2 rounded-lg text-xs font-semibold transition-all border border-slate-200 bg-white text-slate-700 hover:border-sky-300">
+            Predictive ML & Analytics
+          </button>
+          <button data-filter="bi" class="project-filter-btn px-4 py-2 rounded-lg text-xs font-semibold transition-all border border-slate-200 bg-white text-slate-700 hover:border-sky-300">
+            Business Intelligence & BI
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- 1. Deepfake Detection -->
+          <div data-category="ai" class="project-card iaf-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="badge-sky text-[11px]">
+                  FLAGSHIP FORENSIC AI
+                </span>
+                <span class="text-xs font-mono text-slate-400">deepfake_detection</span>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                DeepDetect AI: Multi-Domain Deepfake Forensic System
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Spatial-temporal deepfake media detection framework combining InsightFace SCRFD biometric tracking with multi-domain frequency classification to detect synthetic facial manipulation in video and media.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">PyTorch</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">InsightFace SCRFD</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">OpenCV</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Forensics</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a
+                href="https://github.com/monkgotdunk069-a11y/deepfake_detection"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-800"
+              >
+                <span>View on GitHub</span>
+                <span>↗</span>
+              </a>
+              <span class="text-[10px] text-slate-400 font-mono">Python 3.10+</span>
+            </div>
+          </div>
+
+          <!-- 2. Crime Surveillance -->
+          <div data-category="ml" class="project-card iaf-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="badge-sky text-[11px]">
+                  GEOSPATIAL ML
+                </span>
+                <span class="text-xs font-mono text-slate-400">crime_survillence</span>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                CrimeWatch: NCRB Predictive Geospatial Intelligence
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Predictive crime pattern analytics platform using official National Crime Records Bureau (NCRB) datasets. Implements XGBoost and Random Forest ensembles with geospatial heatmapping for risk zone forecasting.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">XGBoost</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Random Forest</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">GIS Heatmaps</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">NCRB Data</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a
+                href="https://github.com/monkgotdunk069-a11y/crime_survillence"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-800"
+              >
+                <span>View on GitHub</span>
+                <span>↗</span>
+              </a>
+              <span class="text-[10px] text-slate-400 font-mono">Ensemble ML</span>
+            </div>
+          </div>
+
+          <!-- 3. Employee Attrition (Live Demo!) -->
+          <div data-category="ml" class="project-card iaf-card p-6 flex flex-col justify-between border-sky-300">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-[11px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse"></span>
+                  LIVE PRODUCTION APP
+                </span>
+                <span class="text-xs font-mono text-slate-400">employee_attrition</span>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                Employee Attrition Risk Predictor
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Full-stack machine learning web application predicting employee retention likelihood based on HR metrics. Built with Scikit-Learn and Flask, deployed live into production on Render.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100">Scikit-Learn</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100">Flask</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100">Render Cloud</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100">Pandas</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a
+                href="https://employee-attrition-rtvm.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:text-emerald-800"
+              >
+                <span>Live Web App</span>
+                <span>↗</span>
+              </a>
+              <a
+                href="https://github.com/monkgotdunk069-a11y/employee_attrition"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-xs text-slate-500 hover:text-slate-800"
+              >
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. MIT-BIH Arrhythmia CNN -->
+          <div data-category="ai" class="project-card iaf-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="badge-sky text-[11px]">
+                  BIOMEDICAL DEEP LEARNING
+                </span>
+                <span class="text-xs font-mono text-slate-400">MIT_BIH_CNN</span>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                MIT-BIH Arrhythmia ECG Detection CNN
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Deep Convolutional Neural Network trained on the PhysioNet MIT-BIH Arrhythmia database for automated electrocardiogram (ECG) heartbeat classification and cardiac anomaly detection.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">CNN</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">PhysioNet MIT-BIH</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Deep Learning</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a
+                href="https://github.com/monkgotdunk069-a11y/MIT_BIH_CNN"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-800"
+              >
+                <span>View on GitHub</span>
+                <span>↗</span>
+              </a>
+              <span class="text-[10px] text-slate-400 font-mono">Biomedical AI</span>
+            </div>
+          </div>
+
+          <!-- 5. Airbnb India Analytics -->
+          <div data-category="bi" class="project-card iaf-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="badge-sky text-[11px]">
+                  DATA ANALYTICS & BI
+                </span>
+                <span class="text-xs font-mono text-slate-400">AIRBNBDASHBOARD</span>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                Airbnb India Hospitality Analytics & Tableau
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                End-to-end data analytics project on an Airbnb India dataset, encompassing data cleaning, exploratory data analysis (EDA), room pricing distributions, and interactive Tableau dashboards.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Tableau</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Pandas</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">EDA</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Visualization</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a
+                href="https://github.com/monkgotdunk069-a11y/AIRBNBDASHBOARD"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-800"
+              >
+                <span>View on GitHub</span>
+                <span>↗</span>
+              </a>
+              <span class="text-[10px] text-slate-400 font-mono">Tableau BI</span>
+            </div>
+          </div>
+
+          <!-- 6. Zepto Analytics -->
+          <div data-category="bi" class="project-card iaf-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="badge-sky text-[11px]">
+                  PRODUCT ANALYTICS
+                </span>
+                <span class="text-xs font-mono text-slate-400">zepto_analysis</span>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                Zepto Quick-Commerce Catalog & Pricing Platform
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Quantitative product catalog analytics for quick-commerce: evaluating SKU pricing dynamics, category discount depths, stock distribution patterns, and margins.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Data Analytics</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Python</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Catalog Optimization</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a
+                href="https://github.com/monkgotdunk069-a11y/zepto_analysis"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-800"
+              >
+                <span>View on GitHub</span>
+                <span>↗</span>
+              </a>
+              <span class="text-[10px] text-slate-400 font-mono">Retail Analytics</span>
+            </div>
+          </div>
+
+          <!-- 7. AI Agent Anomaly -->
+          <div data-category="ai" class="project-card iaf-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="badge-sky text-[11px]">
+                  AUTONOMOUS AGENTS
+                </span>
+                <span class="text-xs font-mono text-slate-400">ai_agent_anomaly</span>
+              </div>
+
+              <h3 class="text-lg font-bold text-slate-900 mb-2">
+                Autonomous AI Agent Anomaly Detection Pipeline
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Intelligent agent system designed to inspect streaming data pipelines for unsupervised statistical anomalies, distribution drifts, and automated incident flags.
+              </p>
+
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">AI Agents</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Anomaly Detection</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Unsupervised</span>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <a
+                href="https://github.com/monkgotdunk069-a11y/ai_agent_anomaly"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 text-xs font-bold text-sky-700 hover:text-sky-800"
+              >
+                <span>View on GitHub</span>
+                <span>↗</span>
+              </a>
+              <span class="text-[10px] text-slate-400 font-mono">Agentic ML</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION: EDUCATION & QUALIFICATIONS        -->
+      <!-- ========================================== -->
+      <section id="education" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-10 space-y-2">
+          <div class="section-tag mx-auto">
+            <span>🎓</span>
+            <span>ACADEMIC BACKGROUND</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+            Education & Qualifications
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Verified academic degrees, school scores, and technical curricula.
+          </p>
+        </div>
+
+        <!-- Academic Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+          <button data-tab="mca" class="odyssey-tab-btn px-4 py-2 rounded-lg text-xs font-bold border bg-sky-600 text-white shadow-sm">
+            Graphic Era University (MCA AI/DS)
+          </button>
+          <button data-tab="bca" class="odyssey-tab-btn px-4 py-2 rounded-lg text-xs font-bold border border-slate-200 bg-white text-slate-700 hover:border-sky-300">
+            DAV College Sector 10 (BCA • 72%)
+          </button>
+          <button data-tab="school" class="odyssey-tab-btn px-4 py-2 rounded-lg text-xs font-bold border border-slate-200 bg-white text-slate-700 hover:border-sky-300">
+            KV OCF Sec-29B (12th Sci • 74% | 10th • 79%)
+          </button>
+          <button data-tab="ncc" class="odyssey-tab-btn px-4 py-2 rounded-lg text-xs font-bold border border-slate-200 bg-white text-slate-700 hover:border-sky-300">
+            1 CHD AIR SQN NCC ('A' Grade in 'C' Cert)
+          </button>
+        </div>
+
+        <!-- Tab Content Card -->
+        <div class="iaf-card p-6 sm:p-8 max-w-5xl mx-auto">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-100">
+            <div>
+              <span id="odyssey-period" class="text-xs font-mono font-bold text-sky-700 block mb-1">
+                2024 – Present • Master's Program
+              </span>
+              <h3 id="odyssey-degree" class="text-2xl font-bold text-slate-900">
+                Master of Computer Applications (MCA)
+              </h3>
+              <p id="odyssey-inst" class="text-sm text-slate-600 mt-1">
+                Graphic Era Deemed to be University • Dehradun, Uttarakhand
+              </p>
+            </div>
+            <div class="px-3.5 py-2 rounded-lg bg-sky-50 border border-sky-200 text-right">
+              <span class="text-[10px] font-mono text-slate-500 block">SPECIALIZATION</span>
+              <span id="odyssey-focus" class="text-xs font-bold text-sky-800">
+                Artificial Intelligence & Data Science (AI/DS)
+              </span>
+            </div>
+          </div>
+
+          <p id="odyssey-desc" class="mt-5 text-slate-700 text-sm leading-relaxed">
+            Pursuing advanced specialization in machine learning architectures, deep neural networks, computer vision, natural language processing, and high-performance predictive systems.
+          </p>
+
+          <div class="mt-6">
+            <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-slate-500 mb-3">
+              KEY MODULES & PRACTICAL DOMAINS
+            </h4>
+            <div id="odyssey-highlights" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-100 text-xs text-slate-700">
+                <span class="text-sky-600 font-bold">✓</span>
+                <span>Deep Learning Frameworks & Neural Networks (PyTorch, TensorFlow, CNNs, Transformers)</span>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-100 text-xs text-slate-700">
+                <span class="text-sky-600 font-bold">✓</span>
+                <span>Computer Vision & Biometric Forensics (InsightFace, YOLO, Spatial-Temporal Analysis)</span>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-100 text-xs text-slate-700">
+                <span class="text-sky-600 font-bold">✓</span>
+                <span>Predictive Machine Learning & Ensembles (XGBoost, Random Forest, Scikit-Learn)</span>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-slate-50 border border-slate-100 text-xs text-slate-700">
+                <span class="text-sky-600 font-bold">✓</span>
+                <span>High-dimensional Data Analytics, Feature Engineering, and Anomaly Detection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION: 1 CHD AIR SQN NCC & SU-30 PROFILE -->
+      <!-- ========================================== -->
+      <section id="ncc" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-white rounded-3xl border border-sky-100 shadow-sm my-6">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+          <div class="section-tag mx-auto">
+            <span>🎖️</span>
+            <span>AIR FORCE CADETSHIP</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+            1 CHD AIR SQN NCC Leadership
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Air Wing Cadetship • 'A' Grade in 'C' Certificate • Heritage of Capt. Vikram Batra, PVC
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Photo Card -->
+          <div class="lg:col-span-5">
+            <div class="iaf-card p-3">
+              <div class="relative h-[480px] rounded-xl overflow-hidden bg-slate-100">
+                <img
+                  src="./images/nishant-ncc.jpg"
+                  alt="Cadet Nishant Rawat with Capt Vikram Batra PVC portrait at 1 CHD Air Sqn NCC"
+                  class="w-full h-full object-cover object-center"
+                />
+                <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-slate-200 shadow-md">
+                  <span class="text-xs font-mono font-bold text-amber-800 block mb-1">
+                    HERITAGE OF VALOR & DUTY
+                  </span>
+                  <p class="text-xs text-slate-700 leading-relaxed">
+                    Cadet Nishant in official uniform beside the portrait of Kargil War legend <strong class="text-slate-900">Capt. Vikram Batra, PVC</strong> (No. 94/10182 Cadet Vikram Batra, 1 CHD Air Sqn NCC Chandigarh & DAV College alumnus). Awarded <strong class="text-sky-700 font-bold">'A' Grade in the NCC 'C' Certificate</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillars & Sukhoi Su-30MKI Profile Card -->
+          <div class="lg:col-span-7 space-y-4">
+            
+            <!-- Sukhoi Su-30MKI Aircraft Profile Reference Card -->
+            <div class="iaf-card p-5 border-sky-300 bg-sky-50/40 flex flex-col sm:flex-row items-center gap-5">
+              <div class="w-full sm:w-44 h-36 rounded-lg overflow-hidden border border-sky-200 bg-white flex-shrink-0">
+                <img src="./images/su30-profile.png" alt="Sukhoi Su-30MKI Aircraft Profile" class="w-full h-full object-cover object-center" />
+              </div>
+              <div class="space-y-1.5 text-xs">
+                <span class="text-[10px] font-mono text-sky-800 font-bold tracking-wider uppercase block">
+                  INDIAN AIR FORCE AIRCRAFT PROFILE
+                </span>
+                <h4 class="text-base font-extrabold text-slate-900">Sukhoi Su-30MKI Air Superiority Fighter</h4>
+                <p class="text-slate-700 leading-relaxed">
+                  Twin-seat multirole combat aircraft inducted into the Indian Air Force in 2002. Customised variant designed to meet specific IAF operational requirements, featuring canards, thrust-vectoring AL-31FP turbofans, and multi-mission avionics.
+                </p>
+                <div class="flex flex-wrap gap-1.5 pt-1 font-mono text-[10px]">
+                  <span class="px-2 py-0.5 rounded bg-white border border-sky-200 text-sky-800 font-semibold">Twin-Seat Tandem</span>
+                  <span class="px-2 py-0.5 rounded bg-white border border-sky-200 text-slate-700 font-semibold">Forebody Canards</span>
+                  <span class="px-2 py-0.5 rounded bg-white border border-sky-200 text-slate-700 font-semibold">AL-31FP Vector</span>
+                  <span class="px-2 py-0.5 rounded bg-white border border-sky-200 text-slate-700 font-semibold">Mach 2.0+ Multirole</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillars -->
+            <div class="iaf-card p-4">
+              <div class="flex items-center gap-3 mb-1.5">
+                <span class="p-1.5 rounded-md bg-sky-100 text-sky-700 text-base">✈️</span>
+                <h4 class="text-sm font-bold text-slate-900">Airmanship & Flight Principles</h4>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Trained in core aviation theory, aerodynamics, aircraft systems, air navigation, compass drift calculations, and meteorological pattern analysis.
+              </p>
+            </div>
+
+            <div class="iaf-card p-4">
+              <div class="flex items-center gap-3 mb-1.5">
+                <span class="p-1.5 rounded-md bg-sky-100 text-sky-700 text-base">🛡️</span>
+                <h4 class="text-sm font-bold text-slate-900">Military Composure & Decision Making</h4>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Drill precision, parade coordination, and obstacle course navigation forging an instinct to maintain extreme calm and analytical clarity under high-pressure conditions.
+              </p>
+            </div>
+
+            <div class="iaf-card p-4">
+              <div class="flex items-center gap-3 mb-1.5">
+                <span class="p-1.5 rounded-md bg-sky-100 text-sky-700 text-base">🎯</span>
+                <h4 class="text-sm font-bold text-slate-900">Aeromodelling & Engineering Intuition</h4>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Hands-on fabrication, wing-balance calibration, and remote flight testing of model gliders and aircraft prototypes.
+              </p>
+            </div>
+
+            <!-- Mottos -->
+            <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between text-xs">
+              <div>
+                <span class="text-slate-500 block font-mono text-[10px]">IAF MOTTO</span>
+                <span class="text-slate-900 font-bold">नभः स्पृशं दीप्तम् (Touch the Sky with Glory)</span>
+              </div>
+              <div class="text-right">
+                <span class="text-slate-500 block font-mono text-[10px]">NCC CREED</span>
+                <span class="text-sky-700 font-bold">Unity and Discipline</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION: ENDURANCE QUOTE & HOBBIES         -->
+      <!-- ========================================== -->
+      <section id="hobbies" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-10 space-y-2">
+          <div class="section-tag mx-auto">
+            <span>⛰️</span>
+            <span>EXPEDITIONS & PASSIONS</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+            Endurance, Leadership & Hobbies
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            High-altitude mountaineering philosophy, wilderness exploration, and visual storytelling beyond the screen.
+          </p>
+        </div>
+
+        <!-- 1. FEATURED QUOTE CARD: NIMSDAI PURJA (14 PEAKS) -->
+        <div class="iaf-card p-6 sm:p-8 border-sky-300 bg-gradient-to-r from-sky-50/70 via-white to-sky-50/40 max-w-5xl mx-auto mb-12 shadow-md">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            
+            <!-- Left: Quote Poster Image -->
+            <div class="md:col-span-4 flex justify-center">
+              <div class="relative w-full max-w-[240px] aspect-[4/5] rounded-xl overflow-hidden border-2 border-sky-200 shadow-md">
+                <img
+                  src="./images/nimsdai-quote.jpg"
+                  alt="Nimsdai Purja - 14 Peaks Nothing Is Impossible"
+                  class="w-full h-full object-cover object-center"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                <div class="absolute bottom-2 left-2 right-2 text-center">
+                  <span class="text-[10px] font-mono font-bold text-sky-200 uppercase tracking-widest block">
+                    14 PEAKS • NOTHING IS IMPOSSIBLE
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Quote Typography & Philosophy -->
+            <div class="md:col-span-8 space-y-4">
+              <div class="flex items-center gap-2">
+                <span class="badge-sky text-[11px] font-bold">
+                  MOUNTAINEERING ETHOS
+                </span>
+                <span class="text-xs font-mono text-slate-400">• Nimsdai Purja, MBE</span>
+              </div>
+
+              <!-- Quote Block -->
+              <blockquote class="space-y-2">
+                <div class="text-2xl sm:text-3xl lg:text-4xl font-black text-sky-700 leading-tight">
+                  <span class="text-amber-500 font-serif mr-1">“</span>Giving up is not in the blood, sir. It's not in the blood.<span class="text-amber-500 font-serif ml-1">”</span>
+                </div>
+                <div class="text-xs font-mono font-bold text-slate-700 tracking-wide pt-1">
+                  — NIMSDAI PURJA • Special Forces Veteran & Mountaineering Legend
+                </div>
+              </blockquote>
+
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1">
+                This unyielding mountaineering creed drives my approach across every domain—from enduring freezing night outposts on Himalayan ridges and rigorous Indian Air Force cadet drills, to relentlessly optimizing deep neural networks and solving complex algorithmic challenges.
+              </p>
+
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white border border-sky-200 text-sky-800">
+                  ⚡ Mental Fortitude
+                </span>
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white border border-sky-200 text-sky-800">
+                  🏔️ High-Altitude Resilience
+                </span>
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-semibold bg-white border border-sky-200 text-sky-800">
+                  🎯 Relentless Execution
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 2. HOBBIES: TREKKING, CAMPING, PHOTOGRAPHY -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+          <!-- Hobby 1: Trekking -->
+          <div class="iaf-card overflow-hidden flex flex-col justify-between">
+            <div>
+              <div class="relative h-56 overflow-hidden bg-slate-100">
+                <img
+                  src="./images/nishant-mountain.jpg"
+                  alt="Nishant Rawat Trekking in the Dhauladhar Range"
+                  class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute top-3 left-3">
+                  <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/95 backdrop-blur-md text-sky-800 shadow-sm border border-sky-100">
+                    🥾 TREKKING
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-5 space-y-2.5">
+                <h3 class="text-lg font-bold text-slate-900">
+                  High-Altitude Himalayan Trekking
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Navigating rugged alpine terrain across Himachal Pradesh, including steep ascents along the Dhauladhar Range, Triund ridges, and high-altitude trails. Pushing physical limits, building stamina, and navigating mountain routes.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-5 pt-0">
+              <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Dhauladhar Range</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Triund Ascent</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-50 text-sky-800 border border-sky-100">Altitude Stamina</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hobby 2: Camping -->
+          <div class="iaf-card overflow-hidden flex flex-col justify-between">
+            <div>
+              <div class="relative h-56 overflow-hidden bg-slate-100">
+                <img
+                  src="./images/nishant-summit.jpg"
+                  alt="Nishant Rawat Camping & Summit Outpost"
+                  class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute top-3 left-3">
+                  <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/95 backdrop-blur-md text-emerald-800 shadow-sm border border-emerald-100">
+                    ⛺ CAMPING
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-5 space-y-2.5">
+                <h3 class="text-lg font-bold text-slate-900">
+                  Wilderness & Alpine Camping
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Self-sustained alpine camping, establishing wilderness bivouacs, and spending cold nights under pristine Himalayan starry skies. Cultivates self-reliance, outdoor survival preparedness, and profound mental clarity.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-5 pt-0">
+              <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100">Alpine Bivouacs</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100">Night Outposts</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-100">Self-Reliance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hobby 3: Photography -->
+          <div class="iaf-card overflow-hidden flex flex-col justify-between">
+            <div>
+              <div class="relative h-56 overflow-hidden bg-slate-900 group">
+                <img
+                  src="./images/nishant-photography.jpg"
+                  alt="Nishant Rawat Landscape & Nature Photography — Dawn Lake Promenade"
+                  class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                />
+                <div class="absolute top-3 left-3">
+                  <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-white/95 backdrop-blur-md text-amber-800 shadow-sm border border-amber-100">
+                    📸 PHOTOGRAPHY
+                  </span>
+                </div>
+                <div class="absolute bottom-2.5 right-3">
+                  <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                    04:45 AM • BLUE HOUR
+                  </span>
+                </div>
+              </div>
+
+              <div class="p-5 space-y-2.5">
+                <h3 class="text-lg font-bold text-slate-900">
+                  Landscape & Nature Photography
+                </h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  Capturing the stillness of dawn, tranquil waters, dramatic tree silhouettes, and atmospheric light across Chandigarh, Sukhna Lake, and high-altitude Himalayan routes through deliberate framing, dynamic range, and cinematic composition.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-5 pt-0">
+              <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100">
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-100">Dawn Landscapes</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-100">Atmospheric Framing</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-100">Natural Light</span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-100">Sukhna Lake</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION: TECHNICAL SKILLS & COMPETENCIES   -->
+      <!-- ========================================== -->
+      <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-10 space-y-2">
+          <div class="section-tag mx-auto">
+            <span>⚙️</span>
+            <span>CORE COMPETENCIES</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+            Technical Stack & Arsenal
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Libraries, algorithms, and tools applied in research and live production applications.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div class="iaf-card p-5 space-y-3">
+            <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold">
+              🧠
+            </div>
+            <h3 class="text-sm font-bold text-slate-900">Deep Learning & Vision</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 font-mono">
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> PyTorch</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> InsightFace SCRFD</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> OpenCV & Vision</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Convolutional Neural Networks</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Deepfake Forensics</li>
+            </ul>
+          </div>
+
+          <div class="iaf-card p-5 space-y-3">
+            <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold">
+              ⚙️
+            </div>
+            <h3 class="text-sm font-bold text-slate-900">Predictive ML & Ensembles</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 font-mono">
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Scikit-Learn</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> XGBoost & Random Forest</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Anomaly Detection</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Geospatial Predictive Models</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Feature Engineering</li>
+            </ul>
+          </div>
+
+          <div class="iaf-card p-5 space-y-3">
+            <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold">
+              📊
+            </div>
+            <h3 class="text-sm font-bold text-slate-900">Data Analytics & BI</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 font-mono">
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Pandas & NumPy</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Tableau Dashboards</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Exploratory Analysis (EDA)</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Matplotlib & Seaborn</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Statistical Modeling</li>
+            </ul>
+          </div>
+
+          <div class="iaf-card p-5 space-y-3">
+            <div class="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center font-bold">
+              💻
+            </div>
+            <h3 class="text-sm font-bold text-slate-900">Languages & Systems</h3>
+            <ul class="space-y-1.5 text-xs text-slate-600 font-mono">
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Python 3.10+</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> C++ (DAV-10 Foundation)</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> SQL & Relational Databases</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Flask & REST APIs</li>
+              <li class="flex items-center gap-1.5"><span class="text-sky-600">✓</span> Git, GitHub & Linux</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION: RECRUITER CLI CONSOLE             -->
+      <!-- ========================================== -->
+      <section id="terminal" class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-8 space-y-2">
+          <div class="section-tag mx-auto">
+            <span>💻</span>
+            <span>DEVELOPER CLI</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            Dossier Query Console
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm">
+            Quickly query verified credentials, projects, and contacts via direct keyboard commands.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-sky-300 bg-slate-900 text-white shadow-md overflow-hidden font-mono text-xs">
+          <div class="flex items-center justify-between px-4 py-3 bg-slate-950 border-b border-slate-800">
+            <div class="flex items-center space-x-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-400 inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-yellow-400 inline-block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span>
+              <span class="text-slate-400 text-xs ml-2">nishant@graphic-era-mca:~</span>
+            </div>
+            <span class="text-[10px] text-sky-400 font-bold">IAF_BASH</span>
+          </div>
+
+          <!-- Quick Chips -->
+          <div class="px-4 py-2 bg-slate-950/80 border-b border-slate-800 flex flex-wrap gap-2 items-center">
+            <span class="text-[10px] text-slate-400">Commands:</span>
+            <button data-cmd="summary" class="term-chip-btn px-2 py-0.5 rounded bg-sky-950 hover:bg-sky-800 text-sky-200 border border-sky-600 font-bold">summary</button>
+            <button data-cmd="quote" class="term-chip-btn px-2 py-0.5 rounded bg-amber-950 hover:bg-amber-800 text-amber-200 border border-amber-600 font-bold">quote</button>
+            <button data-cmd="hobbies" class="term-chip-btn px-2 py-0.5 rounded bg-emerald-950 hover:bg-emerald-800 text-emerald-200 border border-emerald-600 font-bold">hobbies</button>
+            <button data-cmd="whoami" class="term-chip-btn px-2 py-0.5 rounded bg-slate-800 hover:bg-sky-900 text-sky-300 border border-slate-700">whoami</button>
+            <button data-cmd="education" class="term-chip-btn px-2 py-0.5 rounded bg-slate-800 hover:bg-sky-900 text-sky-300 border border-slate-700">education</button>
+            <button data-cmd="projects" class="term-chip-btn px-2 py-0.5 rounded bg-slate-800 hover:bg-sky-900 text-sky-300 border border-slate-700">projects</button>
+            <button data-cmd="ncc" class="term-chip-btn px-2 py-0.5 rounded bg-slate-800 hover:bg-sky-900 text-sky-300 border border-slate-700">ncc</button>
+            <button data-cmd="skills" class="term-chip-btn px-2 py-0.5 rounded bg-slate-800 hover:bg-sky-900 text-sky-300 border border-slate-700">skills</button>
+            <button data-cmd="contact" class="term-chip-btn px-2 py-0.5 rounded bg-slate-800 hover:bg-sky-900 text-sky-300 border border-slate-700">contact</button>
+            <button data-cmd="clear" class="term-chip-btn px-2 py-0.5 rounded bg-slate-800 hover:bg-sky-900 text-sky-300 border border-slate-700">clear</button>
+          </div>
+
+          <!-- Output -->
+          <div id="terminal-output" class="p-5 max-h-72 overflow-y-auto space-y-2 select-text text-slate-200">
+            <p class="text-sky-400 font-semibold">Nishant Rawat — AI/DS Candidate [Graphic Era University & DAV-10 (PU)]</p>
+            <p class="text-slate-400">Type "help" to display available commands or click the chips above.</p>
+          </div>
+
+          <!-- Input line -->
+          <div class="flex items-center px-4 py-2.5 bg-slate-950 border-t border-slate-800">
+            <span class="text-sky-400 font-bold mr-2">nishant@geu:~$</span>
+            <input
+              id="terminal-input"
+              type="text"
+              placeholder="type 'projects', 'education', 'ncc'..."
+              class="flex-1 bg-transparent border-none outline-none text-white font-mono placeholder:text-slate-600"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- SECTION: CONTACT & INQUIRIES               -->
+      <!-- ========================================== -->
+      <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-2">
+          <div class="section-tag mx-auto">
+            <span>✉️</span>
+            <span>DIRECT COMMS</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+            Get in Touch
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Available for software engineering roles, AI/Data Science internships, research discussions, and collaborations.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-5xl mx-auto">
+          
+          <!-- Left: Direct Channels -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="iaf-card p-6 space-y-4">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Nishant Rawat</h3>
+                <p class="text-xs text-slate-600 mt-0.5">MCA (AI/DS) Candidate • Graphic Era University</p>
+              </div>
+
+              <div class="space-y-2.5">
+                <!-- Direct Email Card -->
+                <a
+                  href="mailto:monkgotdunk069@gmail.com"
+                  class="flex items-center justify-between p-3 rounded-lg bg-sky-50 hover:bg-sky-100 border border-sky-200 text-slate-800 transition-colors"
+                >
+                  <div class="flex items-center space-x-3">
+                    <span class="text-lg">✉️</span>
+                    <div>
+                      <span class="text-[10px] font-mono text-sky-800 font-bold block">DIRECT EMAIL</span>
+                      <span class="text-xs font-semibold text-slate-900">monkgotdunk069@gmail.com</span>
+                    </div>
+                  </div>
+                  <span class="text-xs text-sky-700 font-semibold">Send ↗</span>
+                </a>
+
+                <!-- GitHub Card -->
+                <a
+                  href="https://github.com/monkgotdunk069-a11y"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-between p-3 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-800 transition-colors"
+                >
+                  <div class="flex items-center space-x-3">
+                    <span class="text-lg">💻</span>
+                    <div>
+                      <span class="text-[10px] font-mono text-slate-500 block">GITHUB</span>
+                      <span class="text-xs font-semibold text-slate-900">monkgotdunk069-a11y</span>
+                    </div>
+                  </div>
+                  <span class="text-xs text-sky-700 font-semibold">View ↗</span>
+                </a>
+
+                <!-- LinkedIn Card -->
+                <a
+                  href="https://www.linkedin.com/in/nishant-rawat-412796348"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-between p-3 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-800 transition-colors"
+                >
+                  <div class="flex items-center space-x-3">
+                    <span class="text-lg">🔗</span>
+                    <div>
+                      <span class="text-[10px] font-mono text-slate-500 block">LINKEDIN</span>
+                      <span class="text-xs font-semibold text-slate-900">nishant-rawat-412796348</span>
+                    </div>
+                  </div>
+                  <span class="text-xs text-sky-700 font-semibold">Connect ↗</span>
+                </a>
+
+                <!-- Instagram Card -->
+                <a
+                  href="https://www.instagram.com/nishant_singh_rawat04/?__d=11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-between p-3 rounded-lg bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-800 transition-colors"
+                >
+                  <div class="flex items-center space-x-3">
+                    <span class="text-lg">📸</span>
+                    <div>
+                      <span class="text-[10px] font-mono text-slate-500 block">INSTAGRAM</span>
+                      <span class="text-xs font-semibold text-slate-900">@nishant_singh_rawat04</span>
+                    </div>
+                  </div>
+                  <span class="text-xs text-sky-700 font-semibold">Follow ↗</span>
+                </a>
+              </div>
+
+              <div class="pt-3 border-t border-slate-100 text-xs text-slate-500 space-y-1">
+                <p>📍 Dehradun, Uttarakhand (Graphic Era University)</p>
+                <p>📍 Chandigarh (DAV-10 / KV OCF Sec-29B / 1 CHD Air Sqn)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Message Form -->
+          <div class="lg:col-span-7">
+            <div class="iaf-card p-6 sm:p-8">
+              <h3 class="text-lg font-bold text-slate-900 mb-1">Send a Message</h3>
+              <p class="text-xs text-slate-500 mb-6">Inquiries and messages will be forwarded directly to Nishant.</p>
+
+              <div id="form-success-box" class="hidden p-6 rounded-xl bg-emerald-50 border border-emerald-200 text-center space-y-2">
+                <span class="text-3xl text-emerald-600">✓</span>
+                <h4 class="text-base font-bold text-slate-900">Message Dispatched!</h4>
+                <p class="text-xs text-slate-600">Thank you for reaching out. Nishant will respond shortly.</p>
+              </div>
+
+              <form id="contact-form" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Your Name *</label>
+                    <input type="text" required placeholder="e.g. Recruiter / Collaborator" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:border-sky-500 focus:bg-white outline-none text-slate-900 text-xs transition-colors" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Your Email *</label>
+                    <input type="email" required placeholder="name@domain.com" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:border-sky-500 focus:bg-white outline-none text-slate-900 text-xs transition-colors" />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Subject *</label>
+                  <input type="text" required placeholder="AI/DS Role, Technical Project, or Academic Collaboration" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:border-sky-500 focus:bg-white outline-none text-slate-900 text-xs transition-colors" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Message *</label>
+                  <textarea rows="4" required placeholder="Please provide details regarding the opportunity or project..." class="w-full px-3.5 py-2.5 rounded-lg bg-slate-50 border border-slate-200 focus:border-sky-500 focus:bg-white outline-none text-slate-900 text-xs transition-colors resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="btn-iaf-primary w-full justify-center">
+                  <span>Send Message</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- FOOTER                                     -->
+      <!-- ========================================== -->
+      <footer class="border-t border-sky-100 bg-white py-8 px-4 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-600">
+          <div>
+            <span class="font-bold text-slate-900">Nishant Rawat</span> — MCA (AI & Data Science), Graphic Era University
+          </div>
+          <div class="flex items-center gap-3">
+            <a href="mailto:monkgotdunk069@gmail.com" class="text-sky-700 font-semibold hover:underline">monkgotdunk069@gmail.com</a>
+            <span>•</span>
+            <span>1 CHD AIR SQN NCC ('A' Grade)</span>
+            <span>•</span>
+            <span>DAV-10 PU (72%)</span>
+          </div>
+          <div class="text-slate-400">
+            Indian Air Force Sky Blue & White Theme
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/three-scene.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

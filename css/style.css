@@ -1,0 +1,177 @@
+/* ======================================================== */
+/* INDIAN AIR FORCE (IAF) SKY BLUE & WHITE THEME            */
+/* Neat, Clean, Human-Crafted & Executive Aesthetic        */
+/* ======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --iaf-sky-blue: #0284c7;        /* Sky Blue 600 */
+  --iaf-sky-light: #e0f2fe;       /* Sky Blue 100 */
+  --iaf-sky-bg: #f0f7ff;          /* Airy Sky Backdrop */
+  --iaf-navy: #0f172a;            /* Deep Air Force Navy Text */
+  --iaf-navy-light: #1e293b;      /* Slate 800 */
+  --iaf-border: #bae6fd;          /* Sky Blue 200 Border */
+  --iaf-border-subtle: #e2e8f0;   /* Clean light gray-blue border */
+  --iaf-white: #ffffff;           /* Pristine White */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+body {
+  background-color: #f8fafc;
+  color: var(--iaf-navy);
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Crisp Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #7dd3fc;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* Subtle Sky Grid (Very gentle & professional) */
+.sky-grid {
+  background-image: 
+    linear-gradient(rgba(2, 132, 199, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(2, 132, 199, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Clean White Card with Subtle Sky Blue Border */
+.iaf-card {
+  background: var(--iaf-white);
+  border: 1px solid var(--iaf-border);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.06);
+  transition: all 0.2s ease-in-out;
+}
+
+.iaf-card:hover {
+  border-color: var(--iaf-sky-blue);
+  box-shadow: 0 8px 24px -4px rgba(2, 132, 199, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Typography Helpers */
+.font-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Clean Primary Button (IAF Sky Blue) */
+.btn-iaf-primary {
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.625rem 1.35rem;
+  border-radius: 8px;
+  border: 1px solid #0284c7;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.2);
+}
+
+.btn-iaf-primary:hover {
+  background-color: #0369a1;
+  border-color: #0369a1;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Clean Secondary Button (White with Sky Blue border) */
+.btn-iaf-secondary {
+  background-color: #ffffff;
+  color: #0284c7;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.625rem 1.35rem;
+  border-radius: 8px;
+  border: 1px solid #7dd3fc;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.btn-iaf-secondary:hover {
+  background-color: #f0f9ff;
+  border-color: #0284c7;
+  color: #0369a1;
+  transform: translateY(-1px);
+}
+
+/* Clean Badges */
+.badge-sky {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  border: 1px solid #bae6fd;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.badge-navy {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+/* Section Title Indicator */
+.section-tag {
+  color: #0284c7;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #e0f2fe;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid #bae6fd;
+}
